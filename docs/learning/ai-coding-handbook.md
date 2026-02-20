@@ -12,14 +12,16 @@ This handbook is your definitive guide to working effectively with AI coding ass
 - **Why:** To teach the AI specialized processes (e.g., "How we deploy to AWS" or "How to use our internal UI library").
 - **Pro-Tip:** If you find the AI repeating a mistake or forgetting a specific internal process, create a **Skill** for it.
 
-### MCP (Model Context Protocol)
+### MCP (Model Context Protocol) 
 **The "Nervous System" connecting the AI to the world.**
 - **Purpose:** A standardized way for the AI to interact with your local tools and data securely.
 - **Sources:**
     - **Filesystem:** How I read and edit your code.
     - **Database:** Querying schemas or live data.
     - **External:** Connecting to Slack, GitHub, or Jira.
-- **Why it matters:** It shifts the AI from "guessing" based on training to "knowing" based on your actual live state.
+- **Under the Hood:** MCP relies on **Indexing** and **RAG** to find the right data. 
+- **Deep Dive:** See [Retrieval & Context](./retrieval-and-context.md) for more.
+
 
 ---
 
